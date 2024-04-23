@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi's Portfolio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    nav ul li a:hover {
+        font-size: 1.2rem;
+        color: rgb(167, 167, 221);
+
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        color: white;
+        background-color: rgb(0, 0, 33);
+    }
+
+    .right {
+        font-size: 1.8rem;
+    }
+
+    .firstsection {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px, 0;
+        margin-left: 5%;
+    }
+
+    .firstsection>div {
+        width: 80%;
+    }
+
+    .leftsection {
+        font-size: 3rem;
+    }
+
+    .leftsection .button {
+        padding: 40px 0;
+    }
+
+    .leftsection .btn {
+        padding: 10px;
+        background: #0f1038;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .leftsection .btn a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .rightsection img {
+        width: 70;
+    }
+
+    .big {
+        color: rgb(143, 56, 197);
+
+    }
+
+    #element {
+        color: rgb(143, 56, 197);
+    }
+
+    main hr {
+        border: 0;
+        background: rgb(140, 71, 212);
+        height: 1.2px;
+        margin: 60px 84px;
+    }
+
+    .secondsection {
+        margin: auto;
+        max-width: 80vw;
+        height: 60vh;
+    }
+
+    .secondsection h2 {
+        font-size: 2rem;
+
+    }
+
+    .text_grey {
+        font-size: 1rem;
+        color: gray;
+    }
+
+    .secondsection .box {
+        background: white;
+        margin: 56px 0;
+        width: 70vw;
+        height: 2px;
+        display: flex;
+
+    }
+
+    .secondsection .vertical {
+        background: white;
+        width: 2px;
+        height: 93px;
+        margin: 0 120px;
+    }
+
+    .secondsection .vertical .image {
+        width: 35px;
+        top: -40px;
+        left: -16px;
+        position:relative;
+    }
+
+    .vertical-text {
+        top: 75px;
+        width: 150px;
+        position: relative;
+        color: white;
+    }
+    .vertical-text span{
+        color: gray;
+    }
+
+    footer {
+        background: #0e0e2f;
+        justify-content: space-between;
+
+    }
+
+    .footer {
+
+        padding: 20px 180px;
+        justify-content: space-evenly;
+        display: flex;
+
+    }
+
+   
+
+    .foot-text2  {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .footer>div {
+        width: 250px;
+    }
+
+    footer .footer-class {
+        text-align: center;
+        color: gray;
+        padding: 12px 22px;
+
+
+    }
+
+    .btn:hover {
+        background-color: rgb(19, 34, 83);
+        font-size: 1.2rem;
+    }
+
+.facebook img{
+    width: 30px;
+    height: 30px;
+}
+.instragram img{
+    width: 40px;
+    height: 40px;
+}
+.facebook img:hover{
+    width:35px;
+}
+.instragram img:hover{
+    width:45px;
+}
+.linkdin img{
+    width: 40px;
+    height: 40px;
+}
+.twitter img{
+    width: 40px;
+    height: 40px;
+}
+.linkdin img:hover{
+    width:50px;
+}
+.twitter img:hover{
+    width:50px;
+}
+</style>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="right">RISHI GUPTA</div>
+            <div class="left">
+                <ul>
+                    <li><a href="./index.html"> Home</a></li>
+                    <li><a href="./about.html"> About</a></li>
+                    <li><a href="./Skills.html"> Skills</a></li>
+                    <li><a href="./Testinomial.html"> Testinomial</a> </li>
+                    <li><a href="./Projects.html"> Projects</a></li>
+                    <li><a href="./Contact.html"> Contact Me</a> </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="big">RISHI</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+                <br>
+                <br>
+                <button id="downloadButton" class="btn"> <a href="./myresume4.pdf" download="myresume4.pdf"> Download
+                        Resume</a></button>
+                <button class="btn"><a href="https://github.com/Rishigupta7190" target=”_blank”
+                        attribute>Github</a></button>
+            </div>
+
+            <div class="rightsection">
+                <img src="./pp.png">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="text_grey">What I have done so far </span>
+
+            <h2>Work Experience</h2>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image" src="./mobileap.png">
+                    <div class="vertical-text">Mobile App Developer.
+                   
+                        <br>
+                   
+                        <span>Successfully launched 2 mobile apps, which have been downloaded over 1000 times.
+                            </span>
+                        </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image" src="./webdevelop.png">
+                    <div class="vertical-text">1 Years of experience in Web Development.
+
+                        <span>Reduced page load time by 30% by optimizing code and images.</span>
+
+                    </div>
+                </div>
+                <div class="vertical"><img class="image" src="./js.png">
+                    <div class="vertical-text">Certified JavaScript Developer.
+                        <span>Experienced in building interactive web applications using JavaScript frameworks like React and Angular.</span>
+
+                    </div>
+                </div>
+                <div class="vertical"><img class="image" src="./react1.png">
+                    <div class="vertical-text">Expert in React.
+                            <span>Proficient in developing high-performance, dynamic web applications using React.js.</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                
+                <div class="foot-text2">
+                    
+                            <div class="facebook">
+                                
+                                <a href="https://www.linkedin.com/in/rishi-gupta-500ab5269/" target="_blank"><img src="./face.png" alt="Rishi">
+                                </a>
+                            </div> 
+                            
+                            <div class="instragram">
+                                <a href="https://www.instagram.com/__rishi_gupta_01/?hl=en" target="_blank"><img src="./insta.jpeg" alt=""></a>
+                            
+                        </div>
+                    
+
+                            <div class="linkdin">
+                                
+                                <a href="https://www.linkedin.com/in/rishi-gupta-500ab5269/" target="_blank"><img src="./linkdin.png" alt="Rishi">
+                                </a>
+                            </div> 
+                            
+                            <div class="twitter">
+                                <a href="https://x.com/Rishigu86344033?t=ba9z2CNw6V821XihRL0hbA&s=09" target="_blank"><img src="./twitter.png" alt=""></a>
+                            </div>
+                      
+                </div>
+            </div>
+            <div class="footer-class">
+                Copyright &#169; rishisportfolio.com | All right reserved.
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', 'Programmer.'],
+            typeSpeed: 50,
+        });
+
+        document.getElementById('downloadButton').addEventListener('click', function () {
+            var link = document.createElement('a');
+            link.href = 'myresume4.pdf';
+            link.download = 'myresume4.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+
+</html>

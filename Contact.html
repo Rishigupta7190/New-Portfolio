@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact.html</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+                color: #333;
+            }
+    
+            header {
+                text-align: center;
+                background-color: rgb(3, 3, 40);
+                padding: 5px;
+                border-radius: 5px;
+            }
+    
+            h1 {
+                color: #fff;
+            }
+    
+            .contact-form {
+                max-width: 600px;
+                margin: 20px auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(228, 34, 34, 0.535);
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 10px;
+                color: #333;
+            }
+    
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+            }
+    
+            button {
+                background-color: rgb(0, 0, 33);
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+    
+            button:hover {
+                background-color:rgb(62, 4, 83);
+            }
+    
+            .social-links,.twitter {
+                margin-top:0%;
+            }
+            .Links{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+            }
+            .Links a {
+        margin: auto;
+    }
+    
+            
+           
+            footer{
+    text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+   
+}
+.ris a{
+        color:white;
+        font-family: poppins;
+        font-size: 1.2rem;
+        text-decoration: none;
+        position: absolute;
+        top:0px;
+        right: 0;
+        margin-top: 3%;
+        margin-right: 15%;
+        
+}
+.social-links img{
+    width: 40px;
+    height: 40px;
+}
+.twitter img{
+    width: 40px;
+    height: 40px;
+}
+.social-links img:hover{
+    width:50px;
+}
+.twitter img:hover{
+    width:50px;
+}
+.contact-info {
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    
+}
+.contact-info a,pre{
+    text-decoration: none;
+    display: flex;
+}
+.contact-info img{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1> CONTACT ME</h1>
+        </header>
+        <div class="ris">
+            <a href="./index.html">Home</a>
+          </div>
+        
+    
+        <div class="contact-form">
+            <form action="#" method="post" id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div id="successMessage" style="display: none; color: green;">Message sent successfully!</div>
+    </div>
+        <center><p>Connect with me on social media:</p>
+        <div class="Links">
+        <div class="social-links">
+            
+            <a href="https://www.linkedin.com/in/rishi-gupta-500ab5269/" target="_blank"><img src="./linkdin.png" alt="Rishi">
+            </a>
+        </div> 
+        <div class="twitter">
+            <a href="https://x.com/Rishigu86344033?t=ba9z2CNw6V821XihRL0hbA&s=09" target="_blank"><img src="./twitter.png" alt=""></a>
+        </div>
+    </div>
+    </center>
+    
+        <div class="contact-info">
+            
+            <a href="mailto:guptarishi5959@gmail.com"> <img src="./email.png"><pre>guptarishi5959@gmail.com</pre> </a>
+            <br>
+            <br>
+            <a><img src="./whatsapp.jpeg"><pre>9516788060</pre></a>
+        </div>
+        <footer>
+            <centre>Copyright &#169; rishisportfolio.com | All right reserved.</centre>
+        </footer>
+    
+        <script>
+
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+    
+                if (name.trim() == "") {
+                    alert("Please enter your name.");
+                    return false;
+                }
+    
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+    
+                if (message.trim() == "") {
+                    alert("Please enter your message.");
+                    return false;
+                }
+    
+                return true; 
+                
+            }
+
+            
+            
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); 
+        
+                    if (validateForm()) {
+                        
+                        document.getElementById("successMessage").style.display = "block"; 
+                    }
+                });
+            });
+        
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+        
+                if (name.trim() == "") {
+                    alert("Please enter your name.");
+                    return false;
+                }
+        
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+        
+                if (message.trim() == "") {
+                    alert("Please enter your message.");
+                    return false;
+                }
+        
+                return true;
+            }
+        </script>
+        
+    </body>
+    </html>
